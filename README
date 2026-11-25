@@ -1,0 +1,26 @@
+# TP Injection des dépendances
+
+## Objectif
+Comprendre le couplage faible et l'injection des dépendances en Java.
+
+## Structure du projet
+- `dao` : interface `IDao` et implémentation `DaoImpl`
+- `metier` : interface `IMetier` et implémentation `MetierImpl`
+- `presentation` : classes de test pour chaque type d'injection
+
+## Types d'injection réalisés
+1. **Instanciation statique** : `PresStatique`
+2. **Instanciation dynamique** (réflexion, fichier `config.txt`) : `PresDynamique`
+3. **Spring version XML** (`applicationContext.xml`) : `PresSpringXML`
+4. **Spring version annotations** (`@Component`, `@Autowired`) : `PresSpringAnnotations`
+
+## Technologies
+- Java 17
+- Maven
+- Spring Framework (spring-context)
+
+## Exécution
+Ouvrir le projet dans IntelliJ, puis lancer la méthode `main` de chaque classe du package `presentation`.
+
+## Auteur
+Votre nom
